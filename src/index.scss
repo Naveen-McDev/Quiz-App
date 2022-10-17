@@ -8,6 +8,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  width: 100vw;
 }
 
 .app {
@@ -64,6 +65,99 @@ body {
       &::placeholder {
         font-size: 18px;
       }
+    }
+    p {
+      border: 1px solid black;
+      padding: 10px 30px;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: black;
+      color: white;
+      font-weight: 500;
+    }
+  }
+}
+
+/* quiz */
+.quiz__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .quiz_card {
+    width: 800px;
+    height: 70vh;
+    border: 1px solid black;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+
+    h3 {
+      font-size: 25px;
+      position: absolute;
+      top: 70px;
+    }
+    .quiz__form {
+      width: 500px;
+      text-align: left;
+      display: flex;
+      gap: 10px;
+      p {
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .quiz__question {
+        .quiz__answer {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          margin-top: 20px;
+          div {
+            input {
+              font-size: 20px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+    .btn {
+      border: 1px solid black;
+      padding: 10px 30px;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: black;
+      color: white;
+      font-weight: 500;
+    }
+  }
+}
+
+/* result */
+.result__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .result_card {
+    width: 800px;
+    height: 70vh;
+    border: 1px solid black;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    h3 {
+      font-size: 30px;
+    }
+    h6 {
+      font-size: 25px;
+      letter-spacing: 3px;
     }
     p {
       border: 1px solid black;
